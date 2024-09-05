@@ -1,0 +1,86 @@
+{'data': {'ids':        InvoiceNo StockCode
+0         536365    85123A
+1         536365     71053
+2         536365    84406B
+3         536365    84029G
+4         536365    84029E
+...          ...       ...
+541904    581587     22613
+541905    581587     22899
+541906    581587     23254
+541907    581587     23255
+541908    581587     22138
+
+[541909 rows x 2 columns], 'features':                                 Description  Quantity      InvoiceDate  \
+0        WHITE HANGING HEART T-LIGHT HOLDER         6   12/1/2010 8:26   
+1                       WHITE METAL LANTERN         6   12/1/2010 8:26   
+2            CREAM CUPID HEARTS COAT HANGER         8   12/1/2010 8:26   
+3       KNITTED UNION FLAG HOT WATER BOTTLE         6   12/1/2010 8:26   
+4            RED WOOLLY HOTTIE WHITE HEART.         6   12/1/2010 8:26   
+...                                     ...       ...              ...   
+541904          PACK OF 20 SPACEBOY NAPKINS        12  12/9/2011 12:50   
+541905         CHILDREN'S APRON DOLLY GIRL          6  12/9/2011 12:50   
+541906        CHILDRENS CUTLERY DOLLY GIRL          4  12/9/2011 12:50   
+541907      CHILDRENS CUTLERY CIRCUS PARADE         4  12/9/2011 12:50   
+541908        BAKING SET 9 PIECE RETROSPOT          3  12/9/2011 12:50   
+
+        UnitPrice  CustomerID         Country  
+0            2.55     17850.0  United Kingdom  
+1            3.39     17850.0  United Kingdom  
+2            2.75     17850.0  United Kingdom  
+3            3.39     17850.0  United Kingdom  
+4            3.39     17850.0  United Kingdom  
+...           ...         ...             ...  
+541904       0.85     12680.0          France  
+541905       2.10     12680.0          France  
+541906       4.15     12680.0          France  
+541907       4.15     12680.0          France  
+541908       4.95     12680.0          France  
+
+[541909 rows x 6 columns], 'targets': None, 'original':        InvoiceNo StockCode                          Description  Quantity  \
+0         536365    85123A   WHITE HANGING HEART T-LIGHT HOLDER         6   
+1         536365     71053                  WHITE METAL LANTERN         6   
+2         536365    84406B       CREAM CUPID HEARTS COAT HANGER         8   
+3         536365    84029G  KNITTED UNION FLAG HOT WATER BOTTLE         6   
+4         536365    84029E       RED WOOLLY HOTTIE WHITE HEART.         6   
+...          ...       ...                                  ...       ...   
+541904    581587     22613          PACK OF 20 SPACEBOY NAPKINS        12   
+541905    581587     22899         CHILDREN'S APRON DOLLY GIRL          6   
+541906    581587     23254        CHILDRENS CUTLERY DOLLY GIRL          4   
+541907    581587     23255      CHILDRENS CUTLERY CIRCUS PARADE         4   
+541908    581587     22138        BAKING SET 9 PIECE RETROSPOT          3   
+
+            InvoiceDate  UnitPrice  CustomerID         Country  
+0        12/1/2010 8:26       2.55     17850.0  United Kingdom  
+1        12/1/2010 8:26       3.39     17850.0  United Kingdom  
+2        12/1/2010 8:26       2.75     17850.0  United Kingdom  
+3        12/1/2010 8:26       3.39     17850.0  United Kingdom  
+4        12/1/2010 8:26       3.39     17850.0  United Kingdom  
+...                 ...        ...         ...             ...  
+541904  12/9/2011 12:50       0.85     12680.0          France  
+541905  12/9/2011 12:50       2.10     12680.0          France  
+541906  12/9/2011 12:50       4.15     12680.0          France  
+541907  12/9/2011 12:50       4.15     12680.0          France  
+541908  12/9/2011 12:50       4.95     12680.0          France  
+
+[541909 rows x 8 columns], 'headers': Index(['InvoiceNo', 'StockCode', 'Description', 'Quantity', 'InvoiceDate',
+       'UnitPrice', 'CustomerID', 'Country'],
+      dtype='object')}, 'metadata': {'uci_id': 352, 'name': 'Online Retail', 'repository_url': 'https://archive.ics.uci.edu/dataset/352/online+retail', 'data_url': 'https://archive.ics.uci.edu/static/public/352/data.csv', 'abstract': 'This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.', 'area': 'Business', 'tasks': ['Classification', 'Clustering'], 'characteristics': ['Multivariate', 'Sequential', 'Time-Series'], 'num_instances': 541909, 'num_features': 6, 'feature_types': ['Integer', 'Real'], 'demographics': [], 'target_col': None, 'index_col': ['InvoiceNo', 'StockCode'], 'has_missing_values': 'no', 'missing_values_symbol': None, 'year_of_dataset_creation': 2015, 'last_updated': 'Fri Jan 05 2024', 'dataset_doi': '10.24432/C5BW33', 'creators': ['Daqing Chen'], 'intro_paper': {'title': 'Data mining for the online retail industry: A case study of RFM model-based customer segmentation using data mining', 'authors': 'Daqing Chen, Sai Laing Sain, Kun Guo', 'published_in': 'Journal of Database Marketing and Customer Strategy Management, Vol. 19, No. 3', 'year': 2012, 'url': 'https://www.semanticscholar.org/paper/e43a5a90fa33d419df42e485099f8f08badf2149', 'doi': '10.1057/dbm.2012.17'}, 'additional_info': {'summary': 'This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.', 'purpose': None, 'funded_by': None, 'instances_represent': None, 'recommended_data_splits': None, 'sensitive_data': None, 'preprocessing_description': None, 'variable_info': "InvoiceNo: Invoice number. Nominal, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. \nStockCode: Product (item) code. Nominal, a 5-digit integral number uniquely assigned to each distinct product.\nDescription: Product (item) name. Nominal.\nQuantity: The quantities of each product (item) per transaction. Numeric.\t\nInvoiceDate: Invoice Date and time. Numeric, the day and time when each transaction was generated.\nUnitPrice: Unit price. Numeric, Product price per unit in sterling.\nCustomerID: Customer number. Nominal, a 5-digit integral number uniquely assigned to each customer.\nCountry: Country name. Nominal, the name of the country where each customer resides. ", 'citation': None}}, 'variables':           name     role         type demographic  \
+0    InvoiceNo       ID  Categorical        None   
+1    StockCode       ID  Categorical        None   
+2  Description  Feature  Categorical        None   
+3     Quantity  Feature      Integer        None   
+4  InvoiceDate  Feature         Date        None   
+5    UnitPrice  Feature   Continuous        None   
+6   CustomerID  Feature  Categorical        None   
+7      Country  Feature  Categorical        None   
+
+                                         description     units missing_values  
+0  a 6-digit integral number uniquely assigned to...      None             no  
+1  a 5-digit integral number uniquely assigned to...      None             no  
+2                                       product name      None             no  
+3  the quantities of each product (item) per tran...      None             no  
+4  the day and time when each transaction was gen...      None             no  
+5                             product price per unit  sterling             no  
+6  a 5-digit integral number uniquely assigned to...      None             no  
+7  the name of the country where each customer re...      None             no  }
