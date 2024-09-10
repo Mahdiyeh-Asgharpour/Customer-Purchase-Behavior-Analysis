@@ -10,7 +10,6 @@ This project aims to analyze customer purchasing behavior using a dataset of onl
 - [Key Features](#key-features)
 - [Results](#results)
 - [Future Enhancements](#future-enhancements)
-- [License](#license)
 
 ## Overview
 
@@ -59,7 +58,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/customer-purchase-behavior-analysis.git
+   git clone https://github.com/Mahdiyeh-Asgharpour/Customer-Purchase-Behavior-Analysis
    ```
 
 2. Navigate to the project directory:
@@ -74,7 +73,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
    jupyter notebook
    ```
 
-4. Open the notebook `Customer_Purchase_Behavior_Analysis.ipynb` and run the cells step by step.
+4. Open the notebook `CPBA.ipynb` and run the cells step by step.
 
 ## Project Workflow
 
